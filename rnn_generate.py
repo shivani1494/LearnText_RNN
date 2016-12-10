@@ -38,6 +38,17 @@ class RNN:
 		sf.grad_I_Input = []
 		sf.grad_I_HH = []
 
+		#training loss
+		sf.training_loss_I = []
+		sf.training_loss = []
+		sf.loss = 0.0
+
+		#training loss
+		sf.training_loss_I = []
+		sf.training_loss = []
+		sf.loss = 0.0
+
+
 		sf.yIJ = np.array([])
 		sf.yJK = []
 		
@@ -61,8 +72,6 @@ class RNN:
 		sf.charset = np.array(sf.charset)
 		sf.buildTarget()
 		sf.populateWeights()
-
-		sf.training_loss_I = []
 
 	def buildInputData(sf):
 		f = open("world_war_data.txt", 'r')
@@ -264,6 +273,9 @@ class RNN:
 			sf.grad_I_Input = []
 			sf.grad_I_HH = []
 
+			sf.loss = 0.0
+			sf.training_loss_I = []
+
 			sf.forward_back_prop_single_epoch(j+1)
 			sf.generate()
 
@@ -271,6 +283,9 @@ class RNN:
 			#training_acc_epochs.append(training_acc)
 			#print "training_acc_epochs: ", training_acc_epochs    
 			#return training_acc_epochs 
+
+		sf.createTrainingAccuracyPlot()
+
 
 	def resetParameters(sf, i):
 		
@@ -286,7 +301,9 @@ class RNN:
 
 	def forward_prop(sf, i, j, calc_type, targetIndx):
 		sf.calc_y_hidden_layer(i, j, calc_type)
-		sf.calc_y_softmax_output_layer(targetIndx, j, calc_type)
+		p = sf.calc_y_softmax_output_layer(targetIndx, j, calc_type)
+		predict = p[targetIndx]
+		sf.training_loss_I.append(predict)
 	
 	def backward_prop(sf, currData, timestep, targetIndx):
 		delta_K = sf.calc_deltaK_gradient_descent_output_layer(targetIndx, timestep)
@@ -330,17 +347,23 @@ class RNN:
 				
 			#print "hiddenActivation: ", sf.hiddenActivation
 			sf.adagrad_weight_update()
-			
+			#compute the loss for one example
+			sf.loss += -1.0 * np.sum( np.log(sf.training_loss_I) )
+			#reset for next data example
+
 			#print "*** end data ex: ", i, "***"
 
+		loss_epoch = sf.loss/float(sf.datasetLen)
+		
+		sf.training_loss.append( loss_epoch )			
+		#print "*** end data ex: ", i, "***"
 		acc = ( float(accuracyCounter)/float(sf.datasetLen*sf.sequenceLen) )
 
 		print "Training Accuracy: dataset len: ", sf.datasetLen, ", ", epoch, "th Epoch: ", acc*100
-		
+		print "Training Loss: ", loss_epoch
 		#print "sf.weightsHH[0]", sf.weightsHH[0][2]
 
 		#print "loss: ", sf.loss()
-
 		return acc*100
 
 
@@ -434,6 +457,20 @@ class RNN:
 		adagrad = sf.fudge_fac + np.sqrt(sf.grad_I_HH)
 		adagrad_grad = sf.gradDescHH/adagrad
 		sf.weightsHH += np.dot(sf.learningRate, adagrad_grad)
+
+
+	def createTrainingAccuracyPlot(sf):
+
+		epochs = np.arange( sf.numEpochs )
+		plt.plot(epochs, sf.training_loss, '-r')
+		#axis boundary 0 to max flower feature value
+		plt.axis([0, len(epochs), 0, max(sf.training_loss) + 1])
+
+		#make labels
+		plt.xlabel("Number of Epochs")        
+		plt.ylabel("Training Loss")
+		plt.title("Learning Rate for Training Dataset")
+		plt.savefig("Epochs_vs_Training_Loss")
 
 if __name__ == '__main__':
 	
