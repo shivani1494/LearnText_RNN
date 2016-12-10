@@ -7,7 +7,7 @@ import random
 
 class RNN:
 	 
-	def __init__(sf, hidden_dim=120, sequenceLen=10):
+	def __init__(sf, hidden_dim=120, sequenceLen=10, temp=0.3):
 
 		#why do we get repeatitions?
 		#what should take more time over the same text -> longer or shorter sequences?
@@ -20,7 +20,7 @@ class RNN:
 		sf.output_dim = 256
 
 		#why does a lower temperature help?
-		sf.temp = 0.3
+		sf.temp = temp
 
 		sf.allData = []
 		sf.label = []
@@ -36,8 +36,8 @@ class RNN:
 		sf.buildInputData()
 		sf.buildLabelData()
 
-		sf.numEpochs = 20
-		sf.datasetLen = 20
+		sf.numEpochs = 10
+		sf.datasetLen = 10
 		#sf.testDataLen = 100
 
 		#why did adagrad work great and not sgd
@@ -166,13 +166,13 @@ class RNN:
 
 		sf.hiddenActivation = np.array( list(hh_act_temp) )
 			   
-	def generate(sf):
+	def generate(sf, length=50):
 		
 		calc_type = 1
 
 		print "*** testing- generating sequences ***"
 		str1 = ""		
-		for a in range(50):
+		for a in range(length / sf.sequenceLen):
 
 			#asciiChar = str1[-1]
 			asciiChar = chr( random.randint(0,255) )
@@ -188,6 +188,7 @@ class RNN:
 				str1 += asciiChar
 
 		print str1
+		print len(str1)
 		print "*** testing- generating sequences ***"
 
 	def generate_from(sf, chunk):
@@ -295,13 +296,13 @@ class RNN:
 			sf.training_loss_I = []
 
 			sf.forward_back_prop_single_epoch(j+1)
-			# sf.generate()
-			len_chunk = 10
-			if (j + 1) % 20 == 0:
-				print sf.generate_from("".join(sf.allData[:len_chunk]))
+			# len_chunk = 10
+			# if (j + 1) % 20 == 0:
+			# 	print sf.generate_from("".join(sf.allData[:len_chunk]))
 
 			print "------------------- end of epoch: ", j+1, "-------------------"
 
+		sf.generate(length=1000)
 		sf.createTrainingLossPlot()
 
 		#training_acc_epochs.append(training_acc)
@@ -476,22 +477,18 @@ class RNN:
 
 if __name__ == '__main__':
 
-	print "Normal hidden, Normal sequence length"
+	print "Temperature = 0.3"
 	rnn = RNN()
 	rnn.forward_back_propogation()
 
-	print "Half hidden, Normal sequence length"
-	rnn = RNN(hidden_dim=60)
+	print "Temperature = 0.5"
+	rnn = RNN(temp=0.5)
 	rnn.forward_back_propogation()
 
-	print "Double hidden, Normal sequence length"
-	rnn = RNN(hidden_dim=240)
+	print "Temperature = 1"
+	rnn = RNN(temp=1)
 	rnn.forward_back_propogation()
 
-	print "Normal hidden, Half sequence length"
-	rnn = RNN(sequenceLen=5)
-	rnn.forward_back_propogation()
-
-	print "Normal hidden, Double sequence length"
+	print "Temperature = 1.5"
 	rnn = RNN(sequenceLen=20)
 	rnn.forward_back_propogation()
