@@ -196,14 +196,14 @@ class RNN:
 		matches = 0.0
 		print "*** testing- generating sequences ***"
 		str1 = ""	
-		for c in chunk:
+		for i in range(len(chunk) - 1):
 			sf.setHiddenActivation(False)
-			sf.calc_y_hidden_layer(c, 1, calc_type)
+			sf.calc_y_hidden_layer(chunk[i], 1, calc_type)
 			p = sf.calc_y_softmax_output_layer(0, 1, calc_type)
-			# asciiInt = np.argmax(p)
-			asciiInt = np.random.choice(sf.asciiLen, p=np.ravel(p) )
+			asciiInt = np.argmax(p)
+			# asciiInt = np.random.choice(sf.asciiLen, p=np.ravel(p) )
 			asciiChar = chr(asciiInt)
-			if c == asciiChar:
+			if chunk[i + 1] == asciiChar:
 				matches += 1.0
 			str1 += asciiChar
 

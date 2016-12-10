@@ -24,8 +24,6 @@ class RNN:
 
 		sf.allData = []
 		sf.label = []
-
-		#training loss
 		sf.training_loss_I = []
 		sf.training_loss = []
 		sf.loss = 0.0
@@ -36,8 +34,8 @@ class RNN:
 		sf.buildInputData()
 		sf.buildLabelData()
 
-		sf.numEpochs = 10
-		sf.datasetLen = 1000
+		sf.numEpochs = 3
+		sf.datasetLen = 20
 		#sf.testDataLen = 100
 
 		#why did adagrad work great and not sgd
@@ -278,7 +276,7 @@ class RNN:
 
 			print "------------------- end of epoch: ", j+1, "-------------------"
 
-		sf.createTrainingLossPlot()
+		sf.createTrainingAccuracyPlot()
 
 		#training_acc_epochs.append(training_acc)
 		#print "training_acc_epochs: ", training_acc_epochs    
@@ -289,8 +287,7 @@ class RNN:
 		sf.gradDescOutput = []
 		sf.gradDescInput = []
 		sf.gradDescHH = []
-		#training_loss_I = []
-		#sf.loss = 0
+		training_loss_I = []
 		
 		if i == 0:
 			sf.setHiddenActivation(True)
@@ -301,7 +298,7 @@ class RNN:
 		sf.calc_y_hidden_layer(i, j, calc_type)
 		p = sf.calc_y_softmax_output_layer(targetIndx, j, calc_type)
 		predict = p[targetIndx]
-		sf.training_loss_I.append(predict)
+		training_loss_I.append(predict)
 	
 	def backward_prop(sf, currData, timestep, targetIndx):
 		delta_K = sf.calc_deltaK_gradient_descent_output_layer(targetIndx, timestep)
@@ -345,9 +342,8 @@ class RNN:
 				
 			#print "hiddenActivation: ", sf.hiddenActivation
 			sf.adagrad_weight_update()
-		
-		#compute the loss for one example
-		sf.loss += -1.0 * np.sum( np.log(sf.training_loss_I) )
+			#compute the loss for one example
+			sf.loss += -1.0 * np.sum( np.log(training_loss_I) )
 			#reset for next data example
 
 		loss_epoch = sf.loss/float(sf.datasetLen)
@@ -436,9 +432,9 @@ class RNN:
 		adagrad_grad = sf.gradDescHH/adagrad
 		sf.weightsHH += np.dot(sf.learningRate, adagrad_grad)
 
-	def createTrainingLossPlot(sf):
+	def createTrainingAccuracyPlot(training_acc_epochs):
 
-		epochs = np.arange( sf.numEpochs )
+		epochs = np.arange(sf.numEpochs)
 		plt.plot(epochs, sf.training_loss, '-r')
 		#axis boundary 0 to max flower feature value
 		plt.axis([0, len(epochs), 0, max(sf.training_loss) + 1])

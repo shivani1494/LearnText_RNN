@@ -7,7 +7,7 @@ import random
 
 class RNN:
 	 
-	def __init__(sf):
+	def __init__(sf, hidden_dim=120, sequenceLen=10):
 
 		#why do we get repeatitions?
 		#what should take more time over the same text -> longer or shorter sequences?
@@ -16,7 +16,7 @@ class RNN:
 		#how will increasing the number of hidden units help?
 		#increase hidden units to 
 		sf.input_dim = 256
-		sf.hidden_dim = 120
+		sf.hidden_dim = hidden_dim
 		sf.output_dim = 256
 
 		#why does a lower temperature help?
@@ -31,7 +31,7 @@ class RNN:
 		sf.loss = 0.0
 
 		#best sq len if we change the alpha and this then it starts repeating
-		sf.sequenceLen = 10
+		sf.sequenceLen = sequenceLen
 
 		sf.buildInputData()
 		sf.buildLabelData()
@@ -196,14 +196,13 @@ class RNN:
 		matches = 0.0
 		print "*** testing- generating sequences ***"
 		str1 = ""	
-		for c in chunk:
+		for i in range(len(chunk) - 1):
 			sf.setHiddenActivation(False)
-			sf.calc_y_hidden_layer(c, 1, calc_type)
+			sf.calc_y_hidden_layer(chunk[i], 1, calc_type)
 			p = sf.calc_y_softmax_output_layer(0, 1, calc_type)
-			# asciiInt = np.argmax(p)
-			asciiInt = np.random.choice(sf.asciiLen, p=np.ravel(p) )
+			asciiInt = np.argmax(p)
 			asciiChar = chr(asciiInt)
-			if c == asciiChar:
+			if chunk[i + 1] == asciiChar:
 				matches += 1.0
 			str1 += asciiChar
 
@@ -476,5 +475,22 @@ class RNN:
 
 if __name__ == '__main__':
 	
-	RNN = RNN()
-	RNN.forward_back_propogation()
+	print "Normal hidden, Normal sequence length"
+	rnn = RNN()
+	rnn.forward_back_propogation()
+
+	print "Half hidden, Normal sequence length"
+	rnn = RNN(hidden_dim=60)
+	rnn.forward_back_propogation()
+
+	print "Double hidden, Normal sequence length"
+	rnn = RNN(hidden_dim=240)
+	rnn.forward_back_propogation()
+
+	print "Normal hidden, Half sequence length"
+	rnn = RNN(sequenceLen=5)
+	rnn.forward_back_propogation()
+
+	print "Normal hidden, Double sequence length"
+	rnn = RNN(sequenceLen=20)
+	rnn.forward_back_propogation()
