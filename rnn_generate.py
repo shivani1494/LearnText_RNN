@@ -17,7 +17,7 @@ class RNN:
 		sf.input_dim = 256
 		sf.hidden_dim = 120
 		sf.output_dim = 256
-		sf.temp = 0.25
+		sf.temp = 0.3
 
 		sf.allData = []
 		sf.label = []
@@ -27,13 +27,13 @@ class RNN:
 		sf.buildInputData()
 		sf.buildLabelData()
 
-		sf.numEpochs = 50
+		sf.numEpochs = 100
 		sf.datasetLen = 20000
 		#sf.testDataLen = 100
 
 		#adagrad
 		sf.fudge_fac = 1e-6
-		#keeps the running squares of gradients
+		#keeps a running squares of gradients
 		sf.grad_I_Output = []
 		sf.grad_I_Input = []
 		sf.grad_I_HH = []
@@ -61,6 +61,8 @@ class RNN:
 		sf.charset = np.array(sf.charset)
 		sf.buildTarget()
 		sf.populateWeights()
+
+		sf.training_loss_I = []
 
 	def buildInputData(sf):
 		f = open("world_war_data.txt", 'r')
