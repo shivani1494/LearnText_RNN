@@ -191,27 +191,6 @@ class RNN:
 		print len(str1)
 		print "*** testing- generating sequences ***"
 
-	def generate_from(sf, chunk):
-
-		calc_type = 1
-		matches = 0.0
-		print "*** testing- generating sequences ***"
-		str1 = ""	
-		for i in range(len(chunk) - 1):
-			sf.setHiddenActivation(False)
-			sf.calc_y_hidden_layer(chunk[i], 1, calc_type)
-			p = sf.calc_y_softmax_output_layer(0, 1, calc_type)
-			asciiInt = np.argmax(p)
-			# asciiInt = np.random.choice(sf.asciiLen, p=np.ravel(p) )
-			asciiChar = chr(asciiInt)
-			if chunk[i + 1] == asciiChar:
-				matches += 1.0
-			str1 += asciiChar
-
-		print str1
-		print "*** testing- generating sequences ***"
-		return matches / len(chunk)
-
 	def calc_y_hidden_layer(sf, currData, timestep, calc_type):
 	
 		if calc_type == 0:
@@ -296,9 +275,6 @@ class RNN:
 			sf.training_loss_I = []
 
 			sf.forward_back_prop_single_epoch(j+1)
-			# len_chunk = 10
-			# if (j + 1) % 20 == 0:
-			# 	print sf.generate_from("".join(sf.allData[:len_chunk]))
 
 			print "------------------- end of epoch: ", j+1, "-------------------"
 
