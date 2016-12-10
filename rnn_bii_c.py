@@ -36,8 +36,8 @@ class RNN:
 		sf.buildInputData()
 		sf.buildLabelData()
 
-		sf.numEpochs = 20
-		sf.datasetLen = 20
+		sf.numEpochs = 100
+		sf.datasetLen = 20000
 		#sf.testDataLen = 100
 
 		#why did adagrad work great and not sgd
@@ -194,21 +194,35 @@ class RNN:
 
 		calc_type = 1
 		matches = 0.0
-		print "*** testing- generating sequences ***"
-		str1 = ""	
-		for i in range(len(chunk) - 1):
-			sf.setHiddenActivation(False)
-			sf.calc_y_hidden_layer(chunk[i], 1, calc_type)
-			p = sf.calc_y_softmax_output_layer(0, 1, calc_type)
-			asciiInt = np.argmax(p)
-			asciiChar = chr(asciiInt)
-			if chunk[i + 1] == asciiChar:
-				matches += 1.0
-			str1 += asciiChar
+		chunk_test = chunk[1:]
+		n = sf.sequenceLen
+		split_chunk_data = [ chunk[i:i+n] for i in range(0, len(chunk), n) ]
+		split_chunk_test = [ chunk_test[i:i+n] for i in range(0, len(chunk_test), n) ]
 
-		print str1
-		print "*** testing- generating sequences ***"
-		return matches / len(chunk)
+		str_out = ""	
+
+		for c in range( len(split_chunk_data) - 1):
+
+			if c == 0:
+				sf.setHiddenActivation(False)
+			else:
+				sf.setHiddenActivation(True)
+
+			curr_seq_d = split_chunk_data[c]
+			curr_seq_t = split_chunk_test[c]
+			str_out += curr_seq_d[0] #append the first char
+
+			for i in range( len(curr_seq_d) ):
+				sf.calc_y_hidden_layer(curr_seq_d[i], 1, calc_type)
+				p = sf.calc_y_softmax_output_layer(0, 1, calc_type)
+				asciiInt = np.argmax(p)
+				asciiChar = chr(asciiInt)
+				if curr_seq_t[i] == asciiChar:
+					matches += 1.0
+				str_out += asciiChar
+
+		print "Output text: ", str_out
+		return (matches / len(chunk) )*100
 
 	def calc_y_hidden_layer(sf, currData, timestep, calc_type):
 	
@@ -470,27 +484,27 @@ class RNN:
 		plt.xlabel("Number of Epochs")        
 		plt.ylabel("Training Loss")
 		plt.title("Learning Rate for Training Dataset")
-		plt.savefig("Epochs_vs_Training_Loss")
+		plt.savefig("Epochs_vs_Training_Loss_%d_Hidden_%d_SeqLen" % (sf.hidden_dim, sf.sequenceLen))
 		plt.clf()
 
 if __name__ == '__main__':
 	
-	print "Normal hidden, Normal sequence length"
-	rnn = RNN()
-	rnn.forward_back_propogation()
+	# print "Normal hidden, Normal sequence length"
+	# rnn = RNN()
+	# rnn.forward_back_propogation()
 
 	print "Half hidden, Normal sequence length"
 	rnn = RNN(hidden_dim=60)
 	rnn.forward_back_propogation()
 
-	print "Double hidden, Normal sequence length"
-	rnn = RNN(hidden_dim=240)
-	rnn.forward_back_propogation()
+	# print "Double hidden, Normal sequence length"
+	# rnn = RNN(hidden_dim=240)
+	# rnn.forward_back_propogation()
 
 	print "Normal hidden, Half sequence length"
 	rnn = RNN(sequenceLen=5)
 	rnn.forward_back_propogation()
 
-	print "Normal hidden, Double sequence length"
-	rnn = RNN(sequenceLen=20)
-	rnn.forward_back_propogation()
+	# print "Normal hidden, Double sequence length"
+	# rnn = RNN(sequenceLen=20)
+	# rnn.forward_back_propogation()
