@@ -207,4 +207,78 @@ ols to thein the peapless to treaties of the sublion the preper in thein to and 
 Training Accuracy: dataset len:  20000 ,  33 th Epoch:  55.6175
 *** testing- generating sequences ***
 old the woy have beeand that teadn the pollies to k the greainy, and trefident wright of tither is to such a sreas of thuape is toey our own
-are a prepared to to the pr
+are a prepared to to the proped in the s would beong the spme in the s with the fortime teads of thy of the sreaties ofwar as they we shoulD be commanation of sible that indisted  the follyund the sprented they would being the woold and the man action the pretect of thent the regressed instered intthe consid latter thking of thent the reserty and y to is th
+*** testing- generating sequences ***
+------------------- end of epoch:  33 -------------------
+------------------- start of epoch:  34 -------------------
+Training Accuracy: dataset len:  20000 ,  34 th Epoch:  55.5365
+*** testing- generating sequences ***
+ a that weold and that he shoulistrations and the s under anl the presise of their and anduction of ition of tussian war and the rright the s and the s and the s and the s would notions the 
+all men  not to thrritional y to in th and the mren the faolish well-seass of 
+the small-han been es when th any actiouster whic the preseined the sright to euite that  a to our es of the s be the aright the s world whold that to the sechly are of sing the papely and y to any aenthing th and the sreate of a
+*** testing- generating sequences ***
+------------------- end of epoch:  34 -------------------
+------------------- start of epoch:  35 -------------------
+Training Accuracy: dataset len:  20000 ,  35 th Epoch:  55.7555
+*** testing- generating sequences ***
+o the comp the stands would been our prover as theine states. The stalless of that he sole great can are not oown to act to the foel not to  the consiins to theought the s would being her faelg of theires of thempind of tion the pnder the press as a position oor any repurted the  worther iit have been the sectement of sing the rold ender ing of their governmer in the s and the  country aold the maand the reown the reghest to ten the likn and the s and the ression is the simpl such a serain that 
+*** testing- generating sequences ***
+------------------- end of epoch:  35 -------------------
+------------------- start of epoch:  36 -------------------
+Training Accuracy: dataset len:  20000 ,  36 th Epoch:  55.9065
+*** testing- generating sequences ***
+old that tenthing that we shouling the polly the wreater in tition of sing the rright to e fas of thempon the s a corresse of the r to the freaty of teld be world to suchen a simplopan that  the compoise to anyly stand io the greas under thonghing thent as their for their all theope and an
+us any a ding the pressical aright to mreaties of shall be d to and tnited Statds, would  the preseine and that we shouling the r gevert anter the woy her to eave and that he shouling to theaties of ing of the
+*** testing- generating sequences ***
+------------------- end of epoch:  36 -------------------
+------------------- start of epoch:  37 -------------------
+Training Accuracy: dataset len:  20000 ,  37 th Epoch:  55.9355
+*** testing- generating sequences ***
+uld have aakes of the courten ich is they we should the destration of sing of thent as thein the prever it is ess of they have beeness to that have been the likts and their good thee internadents of tecestial t Wast in tadgring an the man aery the samen and an are not ore inter inder and ieadness and the presises the rreaties thurbour or any of their proper . In and aind make tong the proples wereing the woold enor tisit that  the ressiare and that has to en the hasds the pretest against and the
+*** testing- generating sequences ***
+------------------- end of epoch:  37 -------------------
+------------------- start of epoch:  38 -------------------
+Training Accuracy: dataset len:  20000 ,  38 th Epoch:  55.932
+*** testing- generating sequences ***
+o deady toreing the s under that the eximent of thentte mun pe, and that has beeness and ao the prese the prese that theues that heady to alty a complise to senpone that s of more tes of theish and that he sole action th a great ty the sechly and allaration of peace of  the speak and it isst as a serentes in ling the s fur propees with th and the sressor of  our own sorea complieving their will notion the preaties ofly been that have a y and in tut wrong-dof the grean and their proverty to and s
+*** testing- generating sequences ***
+------------------- end of epoch:  38 -------------------
+------------------- start of epoch:  39 -------------------
+Training Accuracy: dataset len:  20000 ,  39 th Epoch:  56.022
+*** testing- generating sequences ***
+old en their good being to intlicy will  in the prople may hritely to d the press by the wreate of tring aboutl the represe that tthe fact to so dears conditions of the greaty of tefficience-shore has and the fressor of n to defend of the poldier to k possible the arminted and that has beeness and to shall noterestion Äôs the safeless of sion of thereding instrong her hen the cressor of  the same  substive  to the reous and that has beeness of thong-doing restions ao the pres and the pressor bet
+*** testing- generating sequences ***
+------------------- end of epoch:  39 -------------------
+------------------- start of epoch:  40 -------------------
+Training Accuracy: dataset len:  20000 ,  40 th Epoch:  56.093
+*** testing- generating sequences ***
+old that tust men a ment of that he some responsibn to the preater their good being the se and the sright the es of the s and the s as a subtted the pnglest and speaken tefficient ere and ander the foct the rutsting the rely for dentere thay weak proÄôs dent tnow that tustice and the man ao suls so e the presust and whong a sacks. I part cistion of should beong of their good being the cousies and ul proveretion of thent and that horded and that teady to acers of theiress for iden a mus power in 
+*** testing- generating sequences ***
+------------------- end of epoch:  40 -------------------
+------------------- start of epoch:  41 -------------------
+Training Accuracy: dataset len:  20000 ,  41 th Epoch:  56.291
+*** testing- generating sequences ***
+old enterest of the s and has less and ireator, an the serviing and that he shou for any oade is they would be
+we do thken done ao should f
+The peace and the cs represend and the est the cousted the  betwer and the realresser should be our at the comally the s would being the proples withration of sing to that the repder of theold with tren of their good be a great areaty of t0uther war any interns in the s and the  complier  from the  betwer of defend of the sulpees and their good being the pr
+*** testing- generating sequences ***
+------------------- end of epoch:  41 -------------------
+------------------- start of epoch:  42 -------------------
+Training Accuracy: dataset len:  20000 ,  42 th Epoch:  56.2215
+*** testing- generating sequences ***
+ongud to tave to they would beong her fear will meery to so t the provlished and some the  Inow condinten in tay mere in was the dvery more tion of thent and thÄôs againsted the pooples of tones of the world anmented in licy and to the provise the exser some treation of peace of rantirid ora served on and their was actuster for ancess peapered in t8918520
+ring the pre to defeical a mankent the gring the rollies to d the press the prese the pressoration oong to their good been men in thers as t
+*** testing- generating sequences ***
+------------------- end of epoch:  42 -------------------
+------------------- start of epoch:  43 -------------------
+Training Accuracy: dataset len:  20000 ,  43 th Epoch:  56.388
+*** testing- generating sequences ***
+Äù On the  depresents of the sreaty and minivident of the couitien and power and some and y and the eling the s with theo deness oo the presliss for tunder to mthere would to the rapeless anÄôs desireshingly andony to th own the creater of  the sulpees to the s and the  comples tnder treat
+her own er of the  her has beal in theires of thought the  contury aond to the was as that has to k the worls is the cmerican anvance that provident
+the greatly been ander the haing to theough Belgiust to the
+*** testing- generating sequences ***
+------------------- end of epoch:  43 -------------------
+------------------- start of epoch:  44 -------------------
+Training Accuracy: dataset len:  20000 ,  44 th Epoch:  56.31
+*** testing- generating sequences ***
+old becausly been 
