@@ -27,8 +27,8 @@ class RNN:
 		sf.buildInputData()
 		sf.buildLabelData()
 
-		sf.numEpochs = 100
-		sf.datasetLen = 20000
+		sf.numEpochs = 10
+		sf.datasetLen = 20
 		#sf.testDataLen = 100
 
 		#adagrad

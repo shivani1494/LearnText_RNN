@@ -24,6 +24,8 @@ class RNN:
 
 		sf.allData = []
 		sf.label = []
+
+		#training loss
 		sf.training_loss_I = []
 		sf.training_loss = []
 		sf.loss = 0.0
@@ -276,7 +278,7 @@ class RNN:
 
 			print "------------------- end of epoch: ", j+1, "-------------------"
 
-		sf.createTrainingAccuracyPlot()
+		sf.createTrainingLossPlot()
 
 		#training_acc_epochs.append(training_acc)
 		#print "training_acc_epochs: ", training_acc_epochs    
@@ -287,7 +289,8 @@ class RNN:
 		sf.gradDescOutput = []
 		sf.gradDescInput = []
 		sf.gradDescHH = []
-		training_loss_I = []
+		#training_loss_I = []
+		#sf.loss = 0
 		
 		if i == 0:
 			sf.setHiddenActivation(True)
@@ -342,8 +345,9 @@ class RNN:
 				
 			#print "hiddenActivation: ", sf.hiddenActivation
 			sf.adagrad_weight_update()
-			#compute the loss for one example
-			sf.loss += -1.0 * np.sum( np.log(sf.training_loss_I) )
+		
+		#compute the loss for one example
+		sf.loss += -1.0 * np.sum( np.log(sf.training_loss_I) )
 			#reset for next data example
 
 		loss_epoch = sf.loss/float(sf.datasetLen)
@@ -432,7 +436,7 @@ class RNN:
 		adagrad_grad = sf.gradDescHH/adagrad
 		sf.weightsHH += np.dot(sf.learningRate, adagrad_grad)
 
-	def createTrainingAccuracyPlot(sf):
+	def createTrainingLossPlot(sf):
 
 		epochs = np.arange( sf.numEpochs )
 		plt.plot(epochs, sf.training_loss, '-r')
