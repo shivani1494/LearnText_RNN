@@ -25,6 +25,7 @@ class RNN:
 		sf.allData = []
 		sf.label = []
 		sf.training_loss_I = []
+		sf.training_loss = []
 		sf.loss = 0.0
 
 		#best sq len if we change the alpha and this then it starts repeating
@@ -297,7 +298,7 @@ class RNN:
 		sf.calc_y_hidden_layer(i, j, calc_type)
 		p = sf.calc_y_softmax_output_layer(targetIndx, j, calc_type)
 		predict = p[targetIndx]
-		training_loss_I.append(predict)
+		sf.training_loss_I.append(predict)
 	
 	def backward_prop(sf, currData, timestep, targetIndx):
 		delta_K = sf.calc_deltaK_gradient_descent_output_layer(targetIndx, timestep)
@@ -342,7 +343,7 @@ class RNN:
 			#print "hiddenActivation: ", sf.hiddenActivation
 			sf.adagrad_weight_update()
 			#compute the loss for one example
-			sf.loss += -1.0 * np.sum( np.log(training_loss_I) )
+			sf.loss += -1.0 * np.sum( np.log(sf.training_loss_I) )
 			#reset for next data example
 
 		loss_epoch = sf.loss/float(sf.datasetLen)
@@ -435,7 +436,7 @@ class RNN:
 	def createTrainingAccuracyPlot(training_acc_epochs):
 
 		epochs = np.arange(sf.numEpochs)
-		plt.plot(, sf.training_loss, '-r')
+		plt.plot(epochs, sf.training_loss, '-r')
 		#axis boundary 0 to max flower feature value
 		plt.axis([0, len(epochs), 0, max(sf.training_loss) + 1])
 
