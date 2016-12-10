@@ -1,0 +1,210 @@
+------------------- start of epoch:  1 -------------------
+Training Accuracy: dataset len:  20000 ,  1 th Epoch:  34.2385
+*** testing- generating sequences ***
+ the poreat and ing ere the prereat on tored and aas of and int of the are thes  to the an on the anere to theer and wert and of rithe the tereas of talise the  the the aare the haion the aring the arle tore thes and andereatis an the the were the areling the  are the tretere thee the sare the the pores and ion the thee the poreen and at es anle the the sereit on the  and and tored the patien in the the forthe she theas of the eres and in the poring and and and the  in the prone the warestins an
+*** testing- generating sequences ***
+------------------- end of epoch:  1 -------------------
+------------------- start of epoch:  2 -------------------
+Training Accuracy: dataset len:  20000 ,  2 th Epoch:  39.442
+*** testing- generating sequences ***
+ har ation and the che poige oof the forle the theiling the  ingere ther and arding the peeprestit aat on the  in the prace and ans of the aation the  in the roating the  the and iof and and in tien tfor and there andes it of the  been and ere and and and the  the coull be the sean to the  shat the  the the calle to thes and the rof the peas of the ared the  and the tÄúnould thereation tfor and ther and in tion the risitien the sored an in the pras are thet the seat of the peeple the pere to the
+*** testing- generating sequences ***
+------------------- end of epoch:  2 -------------------
+------------------- start of epoch:  3 -------------------
+Training Accuracy: dataset len:  20000 ,  3 th Epoch:  41.756
+*** testing- generating sequences ***
+uld and and and and re the rigg the pease the with the for ter in the  in the prople the aonded the  in the se and and oon the andure the thÄù and theÄôs and and of the mase the prace the arder and and and the  have be tere the coing the foece with tere the there to theing the seont of the hat of thereng the  cousting  and the aall the toent in theÄôs ar in tine the face the foould the stions of tat or aringred the rave the paomen the pbe the thein to and ers of ander and thee the presing the su
+*** testing- generating sequences ***
+------------------- end of epoch:  3 -------------------
+------------------- start of epoch:  4 -------------------
+Training Accuracy: dataset len:  20000 ,  4 th Epoch:  43.5975
+*** testing- generating sequences ***
+ust be ander and the are the aored the wight of thered and terented toat in the  wer have  of the foound be ther and the are soferthe siont  hat of there the seght and theas ar in tine to beele the prace of thee the sore to the anise that tof the prealiss of ts of in th and the pome the peace of the reation tous the soall the raally the pas the proice of the and the aiof the reolly the aar the prealing the  are the pack of the aring the are some t of the fs of the cation of teatle for el with ar
+*** testing- generating sequences ***
+------------------- end of epoch:  4 -------------------
+------------------- start of epoch:  5 -------------------
+Training Accuracy: dataset len:  20000 ,  5 th Epoch:  45.203
+*** testing- generating sequences ***
+y to the sithers and and the pish ard and and the red and the pasting t and the  it of thee the prople the parse the proition of tond the maore the pround be antion the fack of the of the coustrand and of the ring the pr
+porter and ard in tond the foict of the prose the holling trong the pored and sor and they the proplity of thereng the e serent oo the presÄôs the seint and there the coing the siert would y of the sisse war aond and there and the pars of are the peould that ing the prople the r
+*** testing- generating sequences ***
+------------------- end of epoch:  5 -------------------
+------------------- start of epoch:  6 -------------------
+Training Accuracy: dataset len:  20000 ,  6 th Epoch:  46.502
+*** testing- generating sequences ***
+uch will an a some tar and theiling the red to the ablite siound of there and anher the sialle the wincered and and in tomertien tf and the  a mant of have whon which areÄôs the really the rare of theich and thentien the ary is thon the pre and the wersed and er the preice that ierend that has man t and the sing the coanted and ers and there the coalle the saghe stould be and tond the orer and the are in the the for ing the reous of theering the  were and ers and that cound tean that aean and th
+*** testing- generating sequences ***
+------------------- end of epoch:  6 -------------------
+------------------- start of epoch:  7 -------------------
+Training Accuracy: dataset len:  20000 ,  7 th Epoch:  47.699
+*** testing- generating sequences ***
+res of theilition and the readle the ward the erseing the reous to sheuld and there the foomed to ther the ragdent and tond and and and the e propes bat the proice the people the sorther sinf to the sake the wiold to nat of the repered tingther aly tor in the lless and e that all seation tond the se and the pas of the e and the  were sustit the seapless and ely and th in the experess of er and the are in therenter shof the forlity to there and there and in in the price and toere and that the dea
+*** testing- generating sequences ***
+------------------- end of epoch:  7 -------------------
+------------------- start of epoch:  8 -------------------
+Training Accuracy: dataset len:  20000 ,  8 th Epoch:  48.6915
+*** testing- generating sequences ***
+ong the coing that wo the sulled to the r been theil and and the sact on the preains of therenter and the our er and in ther soment and and y to been  serely thom the proized to seound the gusthal to ther or there and thar a that ing the seome not ofly to be wess of theil and andelling they to deficie the witl be the was and they to preseit and allon the proich as the are some t of the ror in the s ar and tand the reill and and and the r and the le seavie  of the woold to be and the coustion the
+*** testing- generating sequences ***
+------------------- end of epoch:  8 -------------------
+------------------- start of epoch:  9 -------------------
+Training Accuracy: dataset len:  20000 ,  9 th Epoch:  49.4295
+*** testing- generating sequences ***
+uch the rese for and the the foll and anding the ras her ourstary to make some tas of the e the sechle the reaunted to breation thment of the war a maally and tongred thay the conser in the  well the  the alless and that has polers of the ras the proice the prace to defend the waont of the our our pingerest tfficis their and and the diking and the  in the sealle the sas in the  it has been the sinse the preick of their astion ly and thail the repdous that  the conteing the leart and th in the re
+*** testing- generating sequences ***
+------------------- end of epoch:  9 -------------------
+------------------- start of epoch:  10 -------------------
+Training Accuracy: dataset len:  20000 ,  10 th Epoch:  50.0835
+*** testing- generating sequences ***
+on the restration of the all treaties anhing the land the regate the poment of tiffored byong the leficien they the rightent and tont reficaent of theil and theinger the resser as ing the gruitter and and the rast and th and in there and that in the le such antial and tongred in ther sightes of the litions and that they to the sefucor and the preseice to makth of the  would be nest and tith the prall the seust and there and and the treaties of thustien andst all theinge have and that to the real
+*** testing- generating sequences ***
+------------------- end of epoch:  10 -------------------
+------------------- start of epoch:  11 -------------------
+Training Accuracy: dataset len:  20000 ,  11 th Epoch:  50.6205
+*** testing- generating sequences ***
+on the treustion of ress of thnit of the or the realle the sown such areaties that me it ho deats of the lightes and theing of the present oore and thout nead bared the preat to beond the faime the prople that  the less are the faome the seill so theility the  a mant toere and therent to brent and tongred to ent of theil and theuld be in ertation aond to theingly and restion of mone the  the speriÄôs the armert and toren the seare to deering and uence of terenter ancemper and govers in has of th
+*** testing- generating sequences ***
+------------------- end of epoch:  11 -------------------
+------------------- start of epoch:  12 -------------------
+Training Accuracy: dataset len:  20000 ,  12 th Epoch:  51.1765
+*** testing- generating sequences ***
+
+        right on tot of the s and the  we some treat of therence of ent and and the listent of the world be ness and tolless and the treatle the procines of tar and to the the least of their a the soment and ers of the armint th inter and the preseitions of litions of which whoch as the  in the prace to their a that or and theinger to taken the wxpressicinical the cind the foome the coust of thein the strllest and ers of their and theinger suchle the sucfle the sument and tongres of ression of
+*** testing- generating sequences ***
+------------------- end of epoch:  12 -------------------
+------------------- start of epoch:  13 -------------------
+Training Accuracy: dataset len:  20000 ,  13 th Epoch:  51.6495
+*** testing- generating sequences ***
+on the treaties in tuss as theingr and tongred to ther have  not to being the prace and in the repperes of thein the lesser in theil have there and there and the present er has beeness of theress and action of  in the stoul for there and that the litst and and the world-soffor heing and there and therent of tas be in tondent
+a pressitione that the
+abliger tindertionses and their aster to the save and the pown should some the  in the reing that wean the seill that tecause they the all ess of the
+*** testing- generating sequences ***
+------------------- end of epoch:  13 -------------------
+------------------- start of epoch:  14 -------------------
+Training Accuracy: dataset len:  20000 ,  14 th Epoch:  52.062
+*** testing- generating sequences ***
+o have and sult men en that there and of the politent of their aster town such areaties thar the lesservent whold the suoul great es who havk is the s all men is and all ss are preility to taken that  the preseit that there and that the preiss of the coment of ho do thein the allors of theing and ander and there a presing to theing and there and arder as thes is to seoun the reid a to ofly to defeit is not ers of theing and than the comng and theing her haing are in has strenthan the wown should
+*** testing- generating sequences ***
+------------------- end of epoch:  14 -------------------
+------------------- start of epoch:  15 -------------------
+Training Accuracy: dataset len:  20000 ,  15 th Epoch:  52.3895
+*** testing- generating sequences ***
+ong in suclly and thrence to oe powers ao have beeness of thersess of e have beeness of there and therence to there the ragever that the areition of tin the resder the proch as the existing and in thenes we laks of the cown to intuster and y to belieing that tur the hadd to the town shill  states and the repuond the reild to theingle such and the treat the rreat stren In the prace and there and therence they the leasly and and politionsly to the  work war ar has to and the reous the prople of th
+*** testing- generating sequences ***
+------------------- end of epoch:  15 -------------------
+------------------- start of epoch:  16 -------------------
+Training Accuracy: dataset len:  20000 ,  16 th Epoch:  52.675
+*** testing- generating sequences ***
+ll merely red the realing the  were and ressed and and the rright of treat wronged that there and haar has in ly and thaing and there and that the prois of the reding the litien anligent of ent of theil and theing and there and of the repreally and tongred to the have beary and tew York _Even a stre
+there in ly and theing and thampersest y and the  would be ness and tollies of n the streas the seaples the sreat has tones of theress and ing to the as to their as to b all and t all and tf the pres
+*** testing- generating sequences ***
+------------------- end of epoch:  16 -------------------
+------------------- start of epoch:  17 -------------------
+Training Accuracy: dataset len:  20000 ,  17 th Epoch:  53.0695
+*** testing- generating sequences ***
+ong the reall men in the some ted and there and of the contier the sparion of the to the some and there and there and therence to ther of therely and real and tonghe of tith the coing the le in have ao great anding the fepresent afall the hright of tither of tither of t conding tonther of ent of theilian and y of the sapenty to ther of ther of the s we has tefent of tight of theated and propered io has the  we should to the faally strengress of tind the le a comples a such a pons in there and th
+*** testing- generating sequences ***
+------------------- end of epoch:  17 -------------------
+------------------- start of epoch:  18 -------------------
+Training Accuracy: dataset len:  20000 ,  18 th Epoch:  53.3115
+*** testing- generating sequences ***
+
+has in tond the letes as the and the lright that the factithing and ster as toreaties of not to being and anding the cright of tÄúgood nating that tin the forlity to oun the the s and the  would meaking the lright the  well and ression of the presein that th
+
+      ung and there in the world mosent as the action of the spor ing for there is not the forti to our theat the reill be theing and there and andrations tut of the n the war ing of thein the world to the s and the  would be ing any pr
+*** testing- generating sequences ***
+------------------- end of epoch:  18 -------------------
+------------------- start of epoch:  19 -------------------
+Training Accuracy: dataset len:  20000 ,  19 th Epoch:  53.578
+*** testing- generating sequences ***
+old to mensing and treaties ofly in the e and the  will and stions and internation and of ing the liast of the as to theing and thers and in the propees to seadse to the  all the a we some preation antions and ing of their as the  well and ression th and the lresing thaing and thurt as they war we sresing of tions and itions of est and there in theippestion ly to our ess of the possible rests in ter the natust the trrupal the ragient than the works and theing of their as the  has been  and the t
+*** testing- generating sequences ***
+------------------- end of epoch:  19 -------------------
+------------------- start of epoch:  20 -------------------
+Training Accuracy: dataset len:  20000 ,  20 th Epoch:  53.814
+*** testing- generating sequences ***
+old that to the sulfing that t ar in theinternatioer to the r the condiny of their all theil and andre some thkin the stilical sea with the s as the sry conding to make ten in the s would been the consive the cright the  would be ress and teadness and the repeess that wendieve that the world be a stown the prace and thent as they the pressicing they which anl the ressin the world be a coint the arter and there and anless of theaties andorts of thenterest aean and thust men anding to be the prese
+*** testing- generating sequences ***
+------------------- end of epoch:  20 -------------------
+------------------- start of epoch:  21 -------------------
+Training Accuracy: dataset len:  20000 ,  21 th Epoch:  54.1005
+*** testing- generating sequences ***
+old and the treaties and the treaties thr advicateon and of lition in  or and then of the  are that  a present and and titie contiugh the prople to thearnest anor of the  well be areaties torencestroys of the preaties anly present and standing the reall men thang in their deast aome the prople that ing the wores in their for they which insteres in ther of thees a sempine the prople the tright to te course teast and treaties th internati that the s and the  world be ned the woress of thÄôs made t
+*** testing- generating sequences ***
+------------------- end of epoch:  21 -------------------
+------------------- start of epoch:  22 -------------------
+Training Accuracy: dataset len:  20000 ,  22 th Epoch:  54.221
+*** testing- generating sequences ***
+ong and that the selply in they is the sright to aend the fround be a menter of  in the spmolisary are conditi
+
+The liÄôs seace se to presing of their and theing our own the worls in the peptesent ofursed to k of the cown to do thor the cright of tish wrong- hen the lright to ben in the s would belither theing and stown the laang and there stand on and and possible  present oeady of therent of t818, I conlught the  well be ter of the  well men ing the grall men in the prese and the ppor the fa
+*** testing- generating sequences ***
+------------------- end of epoch:  22 -------------------
+------------------- start of epoch:  23 -------------------
+Training Accuracy: dataset len:  20000 ,  23 th Epoch:  54.405
+*** testing- generating sequences ***
+iled the rreaties ofly peace oo such a sreas sole ver the caursed to treaties ofly to the er and theing and than the present and autrion whiid and they will of ing the coistes of tight to meye to the  suld be tor which ie do the preaties of that we sre conditient as the action of the treat artich of The have nive the preaties in the war io the somelise the pright of tiffle and st the exient of their for the as the resert and tong as a sas with thar in the s would been that there and yealle the t
+*** testing- generating sequences ***
+------------------- end of epoch:  23 -------------------
+------------------- start of epoch:  24 -------------------
+Training Accuracy: dataset len:  20000 ,  24 th Epoch:  54.5725
+*** testing- generating sequences ***
+ols the ground betreest of their and in ther our oith the arter and theat the trart in they should beaded to breaties ofly present and the foll of their puritioy and the  rengien tong the coust as they we shall to the spill not toart a poliing of their and the as to the as the faar and the We shall and in theing and th as a sult and the sright war ing of their fation ly to the s would beong the spvent of theat that tervined than the coners and whold that tean and anly a presiin the world to the 
+*** testing- generating sequences ***
+------------------- end of epoch:  24 -------------------
+------------------- start of epoch:  25 -------------------
+Training Accuracy: dataset len:  20000 ,  25 th Epoch:  54.7035
+*** testing- generating sequences ***
+ide to the as to enterst of thurt as the and and tent as they we should been intthe or to there the red to theoness and ess of their and and internation that there of their as to treat consiin the warer and in thous and y to make  and so deeasted thes was to ereaties of the preseing of the as the grall men in the presein the conncts are irefucing tentere to k of the sreaties threese of tinceres inster we shally and areaties oftake is noies of their and in ther of thees event er of the s and and 
+*** testing- generating sequences ***
+------------------- end of epoch:  25 -------------------
+------------------- start of epoch:  26 -------------------
+Training Accuracy: dataset len:  20000 ,  26 th Epoch:  54.928
+*** testing- generating sequences ***
+ons and thuth of their and theiren and treaties ofresting toat the preously to areaties ofr own concing of theire stand and the couitier of  the preseins and that the preign sunt iown to intless and to the prese the presest of theole and andong to shown such areaties ofnter of therservent on and theice of the world be nessing that the worl and the e to our tond mising and the seppless an the respees in the s would be all the creaties of proper hi our policing to sucking the sright to treaties of
+*** testing- generating sequences ***
+------------------- end of epoch:  26 -------------------
+------------------- start of epoch:  27 -------------------
+Training Accuracy: dataset len:  20000 ,  27 th Epoch:  55.0565
+*** testing- generating sequences ***
+ols that tound in though are arest and areaties of should being and anly to be tut with thersed to s86
+ wish gonger or tiffore to thous dists of and treaties of the same s of the sreaties of should being our owt in the fending theire some treaties ofh advitions which through the  world be orsing they we should the present and th and the fright the e should bnd all their and their as to tnoth preseited that ous the coust of their would bo the treat a such af its of tnity and treaties inty and the
+*** testing- generating sequences ***
+------------------- end of epoch:  27 -------------------
+------------------- start of epoch:  28 -------------------
+Training Accuracy: dataset len:  20000 ,  28 th Epoch:  55.222
+*** testing- generating sequences ***
+ration of sion of thersice thay which asding that  a treaties of the g
+peace and the complicate of tight to the to be a mand in the posely to such a sight of thenger stand of the prepens in lity and tustice thay would be our life t of the freaties of the polic In a growged to be ression th internati and and wind the spffered of eless of tisilize thent and theas done to the worl If action has been  the speriitions of  the sulfiluse of thent the realle to thent that hore the people and ao the worl
+*** testing- generating sequences ***
+------------------- end of epoch:  28 -------------------
+------------------- start of epoch:  29 -------------------
+Training Accuracy: dataset len:  20000 ,  29 th Epoch:  55.286
+*** testing- generating sequences ***
+ols and thall the trar the secply and a d the commine and shffore the s and the  contimentst and the army and y so merelter to theing the suert and and the treaÄôs sertly spon the erest to b condent astich the e and the s and the  render tought to beong the spuer and th as a sacest as to tutter and ittent andent to andly should  to the spmole to thees not the to be prrition was the commeice and that the preess of theing of was army and y the great of the witien and y to be doer to the  we had re
+*** testing- generating sequences ***
+------------------- end of epoch:  29 -------------------
+------------------- start of epoch:  30 -------------------
+Training Accuracy: dataset len:  20000 ,  30 th Epoch:  55.4035
+*** testing- generating sequences ***
+ols and thuth and thas the comed to the  renger andented thay with the are and treaties thren the sp Whan the s and the  could not the sech es of the  as to seaÄù of the s and the  we have beven a minly some thrender their and and possible t to be a mutter and some the e to the rreaties theat that h
+war as thust as to k peace that he her ed that ha would be e the defecement of ing of theous and aldration of should beong the spin was theo dead makken to be ter and that under tnoter in tmpitien an
+*** testing- generating sequences ***
+------------------- end of epoch:  30 -------------------
+------------------- start of epoch:  31 -------------------
+Training Accuracy: dataset len:  20000 ,  31 th Epoch:  55.457
+*** testing- generating sequences ***
+old and that he should conther and and aas been thkind must le such a speak and m, and and it was theas of their and their for theire to theough Belgium has beeness that  the condected in thent and thuth of they will be the the exful under stration oees with tight the greaties of the preseine of they we should be a reapersed to the the grace that t all fee rondent yean to read menthing to do the twe should mencest toeaties of sing to thers a courd and the e to and teast and tenthe stanes of the 
+*** testing- generating sequences ***
+------------------- end of epoch:  31 -------------------
+------------------- start of epoch:  32 -------------------
+Training Accuracy: dataset len:  20000 ,  32 th Epoch:  55.5805
+*** testing- generating sequences ***
+ols to thein the peapless to treaties of the sublion the preper in thein to and minisher iond minestes of the s and the  country tond be a sussian and that has s have beeand and theaties of her and an the most ring in th as our halards the  well the  in the deal not to k of the gright the  contain tad and and the preseinten and y to the sright that comment oones for deade of threas of theaties of lity that  treaties ing of thet it was tonther of es and their nationsly internatross of tightered b
+*** testing- generating sequences ***
+------------------- end of epoch:  32 -------------------
+------------------- start of epoch:  33 -------------------
+Training Accuracy: dataset len:  20000 ,  33 th Epoch:  55.6175
+*** testing- generating sequences ***
+old the woy have beeand that teadn the pollies to k the greainy, and trefident wright of tither is to such a sreas of thuape is toey our own
+are a prepared to to the pr

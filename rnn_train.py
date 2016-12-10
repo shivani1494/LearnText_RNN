@@ -9,28 +9,35 @@ class RNN:
 	 
 	def __init__(sf):
 
+		#why do we get repeatitions?
 		#what should take more time over the same text -> longer or shorter sequences?
-		sf.learningRate = 0.01 #best learning rate
+		sf.learningRate = 0.01
 
-		#why does increase in hidden unit affect the accuracy badly? 
-		#and create repitions?
+		#how will increasing the number of hidden units help?
+		#increase hidden units to 
 		sf.input_dim = 256
 		sf.hidden_dim = 120
 		sf.output_dim = 256
-		sf.temp = 0.5
+
+		#why does a lower temperature help?
+		sf.temp = 0.3
 
 		sf.allData = []
 		sf.label = []
+		sf.training_loss_I = []
+		sf.loss = 0.0
 
-		sf.sequenceLen = 10 #best sq len if we change the alpha and this then it starts repeating
+		#best sq len if we change the alpha and this then it starts repeating
+		sf.sequenceLen = 10
 
 		sf.buildInputData()
 		sf.buildLabelData()
 
-		sf.numEpochs = 50
-		sf.datasetLen = 20000 
+		sf.numEpochs = 3
+		sf.datasetLen = 20
 		#sf.testDataLen = 100
 
+		#why did adagrad work great and not sgd
 		#adagrad
 		sf.fudge_fac = 1e-6
 		#keeps the running squares of gradients
@@ -227,11 +234,11 @@ class RNN:
 		#fix softmax
 		if calc_type == 1:
 			for i in range(sf.output_dim):        
-				sf.yJK.append( float(math.exp(netJK[i]/sf.temp) ) / ( float(netSum) ) )
+				sf.yJK.append( float(math.exp(netJK[i]/sf.temp) )/( float(netSum) ) )
 
 		if calc_type == 0:
 			for i in range(sf.output_dim):        
-				sf.yJK.append( float(math.exp(netJK[i])) /( float(netSum) ) ) #adding temperature
+				sf.yJK.append( float(math.exp(netJK[i]))/( float(netSum) ) ) #adding temperature
 
 		sf.yJK = np.array(sf.yJK)
 
@@ -260,19 +267,26 @@ class RNN:
 			sf.grad_I_Input = []
 			sf.grad_I_HH = []
 
+			sf.loss = 0.0
+			sf.training_loss_I = []
+
 			sf.forward_back_prop_single_epoch(j+1)
 			sf.generate()
 
 			print "------------------- end of epoch: ", j+1, "-------------------"
-			#training_acc_epochs.append(training_acc)
-			#print "training_acc_epochs: ", training_acc_epochs    
-			#return training_acc_epochs 
+
+		sf.createTrainingAccuracyPlot()
+
+		#training_acc_epochs.append(training_acc)
+		#print "training_acc_epochs: ", training_acc_epochs    
+		#return training_acc_epochs 
 
 	def resetParameters(sf, i):
 		
 		sf.gradDescOutput = []
 		sf.gradDescInput = []
 		sf.gradDescHH = []
+		training_loss_I = []
 		
 		if i == 0:
 			sf.setHiddenActivation(True)
@@ -281,12 +295,15 @@ class RNN:
 
 	def forward_prop(sf, i, j, calc_type, targetIndx):
 		sf.calc_y_hidden_layer(i, j, calc_type)
-		sf.calc_y_softmax_output_layer(targetIndx, j, calc_type)
+		p = sf.calc_y_softmax_output_layer(targetIndx, j, calc_type)
+		predict = p[targetIndx]
+		training_loss_I.append(predict)
 	
 	def backward_prop(sf, currData, timestep, targetIndx):
 		delta_K = sf.calc_deltaK_gradient_descent_output_layer(targetIndx, timestep)
 		sf.bptt(delta_K, timestep, currData)     
 	
+	#do not use this! -> SGD does not work well for lots of epochs
 	def weight_update(sf):
 		sf.weightsIJ += np.dot( sf.learningRate, sf.gradDescInput )
 		sf.weightsJK += np.dot( sf.learningRate, sf.gradDescOutput )
@@ -324,13 +341,19 @@ class RNN:
 				
 			#print "hiddenActivation: ", sf.hiddenActivation
 			sf.adagrad_weight_update()
+			#compute the loss for one example
+			sf.loss += -1.0 * np.sum( np.log(training_loss_I) )
+			#reset for next data example
+
+		loss_epoch = sf.loss/float(sf.datasetLen)
+		sf.training_loss.append( loss_epoch )
 			
-			#print "*** end data ex: ", i, "***"
+		#print "*** end data ex: ", i, "***"
 
 		acc = ( float(accuracyCounter)/float(sf.datasetLen*sf.sequenceLen) )
 
 		print "Training Accuracy: dataset len: ", sf.datasetLen, ", ", epoch, "th Epoch: ", acc*100
-		
+		print "Training Loss: ", loss_epoch
 		#print "sf.weightsHH[0]", sf.weightsHH[0][2]
 
 		#print "loss: ", sf.loss()
@@ -382,26 +405,6 @@ class RNN:
 		#print "target expected", target[targetIndx]
 		#print "yJK->received", yJK
 
-	def loss(sf):
-		L = 0
-		# For each example
-		for i in np.arange(len(sf.label)):
-			# For each timestep
-			output = np.zeros([len(sf.label[i]),256])
-			target = np.zeros(len(sf.label[i]))
-			for t in range(len(sf.label[i])):
-				asciiChar_input = ord(sf.allData[i][t])
-				sf.calc_y_hidden_layer(i, t, calc_type=0)
-				asciiChar_predict = ord(sf.calc_y_softmax_output_layer(0, t, calc_type=0))
-				asciiChar_target = ord(sf.label[i][t])
-				target[t] = asciiChar_target
-				output[t,asciiChar_predict] = 1
-
-			correct_word_predictions = output[:, target.astype(int)]
-			
-			L += -1 * np.sum(np.log(correct_word_predictions))
-		return L
-
 	def adagrad_weight_update(sf):
 
 		if sf.grad_I_Input != []:
@@ -421,7 +424,6 @@ class RNN:
 		adagrad_grad = sf.gradDescOutput/adagrad
 		sf.weightsJK += np.dot(sf.learningRate, adagrad_grad)
 		
-		
 		if sf.grad_I_HH != []:
 			sf.grad_I_HH += sf.gradDescHH**2
 		else:
@@ -429,6 +431,19 @@ class RNN:
 		adagrad = sf.fudge_fac + np.sqrt(sf.grad_I_HH)
 		adagrad_grad = sf.gradDescHH/adagrad
 		sf.weightsHH += np.dot(sf.learningRate, adagrad_grad)
+
+	def createTrainingAccuracyPlot(training_acc_epochs):
+
+		epochs = np.arange(sf.numEpochs)
+		plt.plot(, sf.training_loss, '-r')
+		#axis boundary 0 to max flower feature value
+		plt.axis([0, len(epochs), 0, max(sf.training_loss) + 1])
+
+		#make labels
+		plt.xlabel("Number of Epochs")        
+		plt.ylabel("Training Loss")
+		plt.title("Learning Rate for Training Dataset")
+		plt.savefig("Epochs_vs_Training_Loss")
 
 
 if __name__ == '__main__':
