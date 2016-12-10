@@ -25,6 +25,7 @@ class RNN:
 		sf.allData = []
 		sf.label = []
 		sf.training_loss_I = []
+		sf.training_loss = []
 		sf.loss = 0.0
 
 		#best sq len if we change the alpha and this then it starts repeating
