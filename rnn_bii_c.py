@@ -37,7 +37,7 @@ class RNN:
 		sf.buildLabelData()
 
 		sf.numEpochs = 100
-		sf.datasetLen = 20000
+		sf.datasetLen = 2000
 		#sf.testDataLen = 100
 
 		#why did adagrad work great and not sgd
