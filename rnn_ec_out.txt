@@ -1,0 +1,472 @@
+------------------- start of epoch:  1 -------------------
+Training Accuracy: dataset len:  1000 ,  1 th Epoch:  16.84
+Training Loss:  31.8126664793
+------------------- end of epoch:  1 -------------------
+------------------- start of epoch:  2 -------------------
+Training Accuracy: dataset len:  1000 ,  2 th Epoch:  24.95
+Training Loss:  29.029613901
+------------------- end of epoch:  2 -------------------
+------------------- start of epoch:  3 -------------------
+Training Accuracy: dataset len:  1000 ,  3 th Epoch:  28.79
+Training Loss:  26.5382164879
+------------------- end of epoch:  3 -------------------
+------------------- start of epoch:  4 -------------------
+Training Accuracy: dataset len:  1000 ,  4 th Epoch:  31.21
+Training Loss:  24.9608286161
+------------------- end of epoch:  4 -------------------
+------------------- start of epoch:  5 -------------------
+Training Accuracy: dataset len:  1000 ,  5 th Epoch:  33.71
+Training Loss:  23.8908787683
+------------------- end of epoch:  5 -------------------
+------------------- start of epoch:  6 -------------------
+Training Accuracy: dataset len:  1000 ,  6 th Epoch:  35.46
+Training Loss:  23.2916902076
+------------------- end of epoch:  6 -------------------
+------------------- start of epoch:  7 -------------------
+Training Accuracy: dataset len:  1000 ,  7 th Epoch:  36.78
+Training Loss:  22.6261920198
+------------------- end of epoch:  7 -------------------
+------------------- start of epoch:  8 -------------------
+Training Accuracy: dataset len:  1000 ,  8 th Epoch:  37.86
+Training Loss:  22.0534284537
+------------------- end of epoch:  8 -------------------
+------------------- start of epoch:  9 -------------------
+Training Accuracy: dataset len:  1000 ,  9 th Epoch:  38.48
+Training Loss:  21.7081992317
+------------------- end of epoch:  9 -------------------
+------------------- start of epoch:  10 -------------------
+Training Accuracy: dataset len:  1000 ,  10 th Epoch:  39.88
+Training Loss:  21.3042952222
+------------------- end of epoch:  10 -------------------
+------------------- start of epoch:  11 -------------------
+Training Accuracy: dataset len:  1000 ,  11 th Epoch:  40.61
+Training Loss:  20.9920916036
+------------------- end of epoch:  11 -------------------
+------------------- start of epoch:  12 -------------------
+Training Accuracy: dataset len:  1000 ,  12 th Epoch:  40.67
+Training Loss:  20.7877406309
+------------------- end of epoch:  12 -------------------
+------------------- start of epoch:  13 -------------------
+Training Accuracy: dataset len:  1000 ,  13 th Epoch:  41.81
+Training Loss:  20.4688124965
+------------------- end of epoch:  13 -------------------
+------------------- start of epoch:  14 -------------------
+Training Accuracy: dataset len:  1000 ,  14 th Epoch:  42.62
+Training Loss:  20.2428255598
+------------------- end of epoch:  14 -------------------
+------------------- start of epoch:  15 -------------------
+Training Accuracy: dataset len:  1000 ,  15 th Epoch:  42.42
+Training Loss:  20.1531522443
+------------------- end of epoch:  15 -------------------
+------------------- start of epoch:  16 -------------------
+Training Accuracy: dataset len:  1000 ,  16 th Epoch:  42.81
+Training Loss:  19.8811304201
+------------------- end of epoch:  16 -------------------
+------------------- start of epoch:  17 -------------------
+Training Accuracy: dataset len:  1000 ,  17 th Epoch:  42.92
+Training Loss:  19.9710128564
+------------------- end of epoch:  17 -------------------
+------------------- start of epoch:  18 -------------------
+Training Accuracy: dataset len:  1000 ,  18 th Epoch:  42.65
+Training Loss:  20.0684063589
+------------------- end of epoch:  18 -------------------
+------------------- start of epoch:  19 -------------------
+Training Accuracy: dataset len:  1000 ,  19 th Epoch:  43.05
+Training Loss:  19.9037743067
+------------------- end of epoch:  19 -------------------
+------------------- start of epoch:  20 -------------------
+Training Accuracy: dataset len:  1000 ,  20 th Epoch:  42.74
+Training Loss:  20.0620607407
+Output text:  Ingwhinwena woneewEnenngnghwrn hE w newenrhnm
+enewû, wº8Äº  wnwhneren rng ngh
+waenhn w ren
+wen ing
+23.0
+------------------- end of epoch:  20 -------------------
+------------------- start of epoch:  21 -------------------
+Training Accuracy: dataset len:  1000 ,  21 th Epoch:  43.34
+Training Loss:  19.7877087527
+------------------- end of epoch:  21 -------------------
+------------------- start of epoch:  22 -------------------
+Training Accuracy: dataset len:  1000 ,  22 th Epoch:  43.74
+Training Loss:  19.6810026407
+------------------- end of epoch:  22 -------------------
+------------------- start of epoch:  23 -------------------
+Training Accuracy: dataset len:  1000 ,  23 th Epoch:  43.67
+Training Loss:  19.767915996
+------------------- end of epoch:  23 -------------------
+------------------- start of epoch:  24 -------------------
+Training Accuracy: dataset len:  1000 ,  24 th Epoch:  43.44
+Training Loss:  19.8639640433
+------------------- end of epoch:  24 -------------------
+------------------- start of epoch:  25 -------------------
+Training Accuracy: dataset len:  1000 ,  25 th Epoch:  43.72
+Training Loss:  19.6575701865
+------------------- end of epoch:  25 -------------------
+------------------- start of epoch:  26 -------------------
+Training Accuracy: dataset len:  1000 ,  26 th Epoch:  43.88
+Training Loss:  19.6302848365
+------------------- end of epoch:  26 -------------------
+------------------- start of epoch:  27 -------------------
+Training Accuracy: dataset len:  1000 ,  27 th Epoch:  43.2
+Training Loss:  19.7772007283
+------------------- end of epoch:  27 -------------------
+------------------- start of epoch:  28 -------------------
+Training Accuracy: dataset len:  1000 ,  28 th Epoch:  42.61
+Training Loss:  19.8765884196
+------------------- end of epoch:  28 -------------------
+------------------- start of epoch:  29 -------------------
+Training Accuracy: dataset len:  1000 ,  29 th Epoch:  43.53
+Training Loss:  19.6410880928
+------------------- end of epoch:  29 -------------------
+------------------- start of epoch:  30 -------------------
+Training Accuracy: dataset len:  1000 ,  30 th Epoch:  43.47
+Training Loss:  19.7433458249
+------------------- end of epoch:  30 -------------------
+------------------- start of epoch:  31 -------------------
+Training Accuracy: dataset len:  1000 ,  31 th Epoch:  42.45
+Training Loss:  19.9708792296
+------------------- end of epoch:  31 -------------------
+------------------- start of epoch:  32 -------------------
+Training Accuracy: dataset len:  1000 ,  32 th Epoch:  42.75
+Training Loss:  20.0086482142
+------------------- end of epoch:  32 -------------------
+------------------- start of epoch:  33 -------------------
+Training Accuracy: dataset len:  1000 ,  33 th Epoch:  42.7
+Training Loss:  20.0399542945
+------------------- end of epoch:  33 -------------------
+------------------- start of epoch:  34 -------------------
+Training Accuracy: dataset len:  1000 ,  34 th Epoch:  42.19
+Training Loss:  20.1401352827
+------------------- end of epoch:  34 -------------------
+------------------- start of epoch:  35 -------------------
+Training Accuracy: dataset len:  1000 ,  35 th Epoch:  42.07
+Training Loss:  20.3799552215
+------------------- end of epoch:  35 -------------------
+------------------- start of epoch:  36 -------------------
+Training Accuracy: dataset len:  1000 ,  36 th Epoch:  41.26
+Training Loss:  20.6442745426
+------------------- end of epoch:  36 -------------------
+------------------- start of epoch:  37 -------------------
+Training Accuracy: dataset len:  1000 ,  37 th Epoch:  40.94
+Training Loss:  20.6499340823
+------------------- end of epoch:  37 -------------------
+------------------- start of epoch:  38 -------------------
+Training Accuracy: dataset len:  1000 ,  38 th Epoch:  41.72
+Training Loss:  20.4124716945
+------------------- end of epoch:  38 -------------------
+------------------- start of epoch:  39 -------------------
+Training Accuracy: dataset len:  1000 ,  39 th Epoch:  40.35
+Training Loss:  20.8747822069
+------------------- end of epoch:  39 -------------------
+------------------- start of epoch:  40 -------------------
+Training Accuracy: dataset len:  1000 ,  40 th Epoch:  39.83
+Training Loss:  21.0836427375
+Output text:  Ingwhinwenh woneÄwE
+enngnghwrn hE wonew
+nrhnm
+ynewÄú w88Ä8  wnwhneren rng ngh
+whenhn woren
+win ing
+22.0
+------------------- end of epoch:  40 -------------------
+------------------- start of epoch:  41 -------------------
+Training Accuracy: dataset len:  1000 ,  41 th Epoch:  39.54
+Training Loss:  21.2525892146
+------------------- end of epoch:  41 -------------------
+------------------- start of epoch:  42 -------------------
+Training Accuracy: dataset len:  1000 ,  42 th Epoch:  38.7
+Training Loss:  21.4942001923
+------------------- end of epoch:  42 -------------------
+------------------- start of epoch:  43 -------------------
+Training Accuracy: dataset len:  1000 ,  43 th Epoch:  38.46
+Training Loss:  21.7059057102
+------------------- end of epoch:  43 -------------------
+------------------- start of epoch:  44 -------------------
+Training Accuracy: dataset len:  1000 ,  44 th Epoch:  38.37
+Training Loss:  21.6117977905
+------------------- end of epoch:  44 -------------------
+------------------- start of epoch:  45 -------------------
+Training Accuracy: dataset len:  1000 ,  45 th Epoch:  37.82
+Training Loss:  22.0154357112
+------------------- end of epoch:  45 -------------------
+------------------- start of epoch:  46 -------------------
+Training Accuracy: dataset len:  1000 ,  46 th Epoch:  38.28
+Training Loss:  21.7130246387
+------------------- end of epoch:  46 -------------------
+------------------- start of epoch:  47 -------------------
+Training Accuracy: dataset len:  1000 ,  47 th Epoch:  37.46
+Training Loss:  22.0431322068
+------------------- end of epoch:  47 -------------------
+------------------- start of epoch:  48 -------------------
+Training Accuracy: dataset len:  1000 ,  48 th Epoch:  37.36
+Training Loss:  21.9957974892
+------------------- end of epoch:  48 -------------------
+------------------- start of epoch:  49 -------------------
+Training Accuracy: dataset len:  1000 ,  49 th Epoch:  36.66
+Training Loss:  22.227915158
+------------------- end of epoch:  49 -------------------
+------------------- start of epoch:  50 -------------------
+Training Accuracy: dataset len:  1000 ,  50 th Epoch:  36.15
+Training Loss:  22.5223875827
+------------------- end of epoch:  50 -------------------
+------------------- start of epoch:  51 -------------------
+Training Accuracy: dataset len:  1000 ,  51 th Epoch:  36.2
+Training Loss:  22.6968808525
+------------------- end of epoch:  51 -------------------
+------------------- start of epoch:  52 -------------------
+Training Accuracy: dataset len:  1000 ,  52 th Epoch:  34.69
+Training Loss:  22.954017592
+------------------- end of epoch:  52 -------------------
+------------------- start of epoch:  53 -------------------
+Training Accuracy: dataset len:  1000 ,  53 th Epoch:  35.09
+Training Loss:  23.2514523201
+------------------- end of epoch:  53 -------------------
+------------------- start of epoch:  54 -------------------
+Training Accuracy: dataset len:  1000 ,  54 th Epoch:  34.41
+Training Loss:  23.3279423743
+------------------- end of epoch:  54 -------------------
+------------------- start of epoch:  55 -------------------
+Training Accuracy: dataset len:  1000 ,  55 th Epoch:  33.85
+Training Loss:  23.4213603996
+------------------- end of epoch:  55 -------------------
+------------------- start of epoch:  56 -------------------
+Training Accuracy: dataset len:  1000 ,  56 th Epoch:  33.43
+Training Loss:  23.6089546381
+------------------- end of epoch:  56 -------------------
+------------------- start of epoch:  57 -------------------
+Training Accuracy: dataset len:  1000 ,  57 th Epoch:  33.08
+Training Loss:  23.7581013159
+------------------- end of epoch:  57 -------------------
+------------------- start of epoch:  58 -------------------
+Training Accuracy: dataset len:  1000 ,  58 th Epoch:  33.42
+Training Loss:  23.6470910464
+------------------- end of epoch:  58 -------------------
+------------------- start of epoch:  59 -------------------
+Training Accuracy: dataset len:  1000 ,  59 th Epoch:  32.98
+Training Loss:  23.7673708198
+------------------- end of epoch:  59 -------------------
+------------------- start of epoch:  60 -------------------
+Training Accuracy: dataset len:  1000 ,  60 th Epoch:  32.44
+Training Loss:  23.8424171902
+Output text:  Ingwhinwenh wfn
+Äw`
+enngnghwrn h` won
+w
+nrhnm
+yn
+wÄú w88Ä8  wnwhn
+r
+n rng
+ngh
+wh
+nhn wor
+n
+wen ing
+19.0
+------------------- end of epoch:  60 -------------------
+------------------- start of epoch:  61 -------------------
+Training Accuracy: dataset len:  1000 ,  61 th Epoch:  33.1
+Training Loss:  23.718843248
+------------------- end of epoch:  61 -------------------
+------------------- start of epoch:  62 -------------------
+Training Accuracy: dataset len:  1000 ,  62 th Epoch:  32.91
+Training Loss:  24.1908632536
+------------------- end of epoch:  62 -------------------
+------------------- start of epoch:  63 -------------------
+Training Accuracy: dataset len:  1000 ,  63 th Epoch:  32.69
+Training Loss:  23.8790120049
+------------------- end of epoch:  63 -------------------
+------------------- start of epoch:  64 -------------------
+Training Accuracy: dataset len:  1000 ,  64 th Epoch:  32.16
+Training Loss:  24.2908386702
+------------------- end of epoch:  64 -------------------
+------------------- start of epoch:  65 -------------------
+Training Accuracy: dataset len:  1000 ,  65 th Epoch:  31.41
+Training Loss:  24.811613369
+------------------- end of epoch:  65 -------------------
+------------------- start of epoch:  66 -------------------
+Training Accuracy: dataset len:  1000 ,  66 th Epoch:  30.94
+Training Loss:  25.1274664623
+------------------- end of epoch:  66 -------------------
+------------------- start of epoch:  67 -------------------
+Training Accuracy: dataset len:  1000 ,  67 th Epoch:  31.18
+Training Loss:  24.7401871215
+------------------- end of epoch:  67 -------------------
+------------------- start of epoch:  68 -------------------
+Training Accuracy: dataset len:  1000 ,  68 th Epoch:  31.33
+Training Loss:  24.4644757386
+------------------- end of epoch:  68 -------------------
+------------------- start of epoch:  69 -------------------
+Training Accuracy: dataset len:  1000 ,  69 th Epoch:  30.14
+Training Loss:  25.1362670859
+------------------- end of epoch:  69 -------------------
+------------------- start of epoch:  70 -------------------
+Training Accuracy: dataset len:  1000 ,  70 th Epoch:  30.67
+Training Loss:  24.7547097981
+------------------- end of epoch:  70 -------------------
+------------------- start of epoch:  71 -------------------
+Training Accuracy: dataset len:  1000 ,  71 th Epoch:  31.03
+Training Loss:  24.9391329648
+------------------- end of epoch:  71 -------------------
+------------------- start of epoch:  72 -------------------
+Training Accuracy: dataset len:  1000 ,  72 th Epoch:  29.68
+Training Loss:  25.7897380789
+------------------- end of epoch:  72 -------------------
+------------------- start of epoch:  73 -------------------
+Training Accuracy: dataset len:  1000 ,  73 th Epoch:  29.79
+Training Loss:  25.2539408413
+------------------- end of epoch:  73 -------------------
+------------------- start of epoch:  74 -------------------
+Training Accuracy: dataset len:  1000 ,  74 th Epoch:  28.87
+Training Loss:  25.474549209
+------------------- end of epoch:  74 -------------------
+------------------- start of epoch:  75 -------------------
+Training Accuracy: dataset len:  1000 ,  75 th Epoch:  29.24
+Training Loss:  25.5929878559
+------------------- end of epoch:  75 -------------------
+------------------- start of epoch:  76 -------------------
+Training Accuracy: dataset len:  1000 ,  76 th Epoch:  29.89
+Training Loss:  25.2584565846
+------------------- end of epoch:  76 -------------------
+------------------- start of epoch:  77 -------------------
+Training Accuracy: dataset len:  1000 ,  77 th Epoch:  30.04
+Training Loss:  25.3306428706
+------------------- end of epoch:  77 -------------------
+------------------- start of epoch:  78 -------------------
+Training Accuracy: dataset len:  1000 ,  78 th Epoch:  29.04
+Training Loss:  25.8714612019
+------------------- end of epoch:  78 -------------------
+------------------- start of epoch:  79 -------------------
+Training Accuracy: dataset len:  1000 ,  79 th Epoch:  29.22
+Training Loss:  25.5153800461
+------------------- end of epoch:  79 -------------------
+------------------- start of epoch:  80 -------------------
+Training Accuracy: dataset len:  1000 ,  80 th Epoch:  28.37
+Training Loss:  25.7957187334
+Output text:  Ingwhenwenh wfneÄwù
+enngnghwrn hù wonew
+nrhnm
+ynewÄú w48Ä4  wnwhneren rng
+ngh
+whenhn woren
+wen eng
+20.0
+------------------- end of epoch:  80 -------------------
+------------------- start of epoch:  81 -------------------
+Training Accuracy: dataset len:  1000 ,  81 th Epoch:  28.18
+Training Loss:  26.0635226164
+------------------- end of epoch:  81 -------------------
+------------------- start of epoch:  82 -------------------
+Training Accuracy: dataset len:  1000 ,  82 th Epoch:  28.07
+Training Loss:  26.343768042
+------------------- end of epoch:  82 -------------------
+------------------- start of epoch:  83 -------------------
+Training Accuracy: dataset len:  1000 ,  83 th Epoch:  28.76
+Training Loss:  25.7809932759
+------------------- end of epoch:  83 -------------------
+------------------- start of epoch:  84 -------------------
+Training Accuracy: dataset len:  1000 ,  84 th Epoch:  28.56
+Training Loss:  25.7681982219
+------------------- end of epoch:  84 -------------------
+------------------- start of epoch:  85 -------------------
+Training Accuracy: dataset len:  1000 ,  85 th Epoch:  27.84
+Training Loss:  25.7715823695
+------------------- end of epoch:  85 -------------------
+------------------- start of epoch:  86 -------------------
+Training Accuracy: dataset len:  1000 ,  86 th Epoch:  27.81
+Training Loss:  26.2172696537
+------------------- end of epoch:  86 -------------------
+------------------- start of epoch:  87 -------------------
+Training Accuracy: dataset len:  1000 ,  87 th Epoch:  26.71
+Training Loss:  27.310374496
+------------------- end of epoch:  87 -------------------
+------------------- start of epoch:  88 -------------------
+Training Accuracy: dataset len:  1000 ,  88 th Epoch:  26.77
+Training Loss:  27.611010008
+------------------- end of epoch:  88 -------------------
+------------------- start of epoch:  89 -------------------
+Training Accuracy: dataset len:  1000 ,  89 th Epoch:  26.81
+Training Loss:  26.9934317928
+------------------- end of epoch:  89 -------------------
+------------------- start of epoch:  90 -------------------
+Training Accuracy: dataset len:  1000 ,  90 th Epoch:  26.2
+Training Loss:  27.0763780817
+------------------- end of epoch:  90 -------------------
+------------------- start of epoch:  91 -------------------
+Training Accuracy: dataset len:  1000 ,  91 th Epoch:  27.05
+Training Loss:  26.5344769664
+------------------- end of epoch:  91 -------------------
+------------------- start of epoch:  92 -------------------
+Training Accuracy: dataset len:  1000 ,  92 th Epoch:  26.24
+Training Loss:  27.2372876847
+------------------- end of epoch:  92 -------------------
+------------------- start of epoch:  93 -------------------
+Training Accuracy: dataset len:  1000 ,  93 th Epoch:  27.21
+Training Loss:  26.8720567302
+------------------- end of epoch:  93 -------------------
+------------------- start of epoch:  94 -------------------
+Training Accuracy: dataset len:  1000 ,  94 th Epoch:  25.81
+Training Loss:  27.9308171976
+------------------- end of epoch:  94 -------------------
+------------------- start of epoch:  95 -------------------
+Training Accuracy: dataset len:  1000 ,  95 th Epoch:  26.22
+Training Loss:  27.4164283068
+------------------- end of epoch:  95 -------------------
+------------------- start of epoch:  96 -------------------
+Training Accuracy: dataset len:  1000 ,  96 th Epoch:  26.64
+Training Loss:  27.094799874
+------------------- end of epoch:  96 -------------------
+------------------- start of epoch:  97 -------------------
+Training Accuracy: dataset len:  1000 ,  97 th Epoch:  26.47
+Training Loss:  26.3015861788
+------------------- end of epoch:  97 -------------------
+------------------- start of epoch:  98 -------------------
+Training Accuracy: dataset len:  1000 ,  98 th Epoch:  26.66
+Training Loss:  26.4171995591
+------------------- end of epoch:  98 -------------------
+------------------- start of epoch:  99 -------------------
+Training Accuracy: dataset len:  1000 ,  99 th Epoch:  27.03
+Training Loss:  26.2506801197
+------------------- end of epoch:  99 -------------------
+------------------- start of epoch:  100 -------------------
+Training Accuracy: dataset len:  1000 ,  100 th Epoch:  26.42
+Training Loss:  26.5458858099
+Output text:  Ingwhenwen  wffeÄwÄ
+enngnghwrf hÄ w few
+nohnm
+
+newÄ w48Ä4  wnwhferen ofg ngh
+w enhn w ref
+wen eng
+20.0
+------------------- end of epoch:  100 -------------------
+
+*** testing- generating sequences ***
+
+wh the fe the an the the e er
+ate no th the the t the te in the tes dhe the t ees the the paes one 
+*** testing- generating sequences ***
+
+*** testing- generating sequences ***
+ of the t e the he to ao then s 
+or an aonthin thesereng sonÄ toa thes ie tert te tored stentert non
+*** testing- generating sequences ***
+
+*** testing- generating sequences ***
+ herure ceer de and  tef rasin on ain atised ons hf the frei thedte cur an ter ao eatin atdenaen  th
+*** testing- generating sequences ***
+
+*** testing- generating sequences ***
+ veharudy 
+ nefetsrnang ar in ishensnd pnrer vveusses o
+ÄuS
+Cicd pso oo ormigvp
+oflebe nfsargl a o
+*** testing- generating sequences ***
+
+*** testing- generating sequences ***
+
+inrudres,Äwll bnscmeuconoP4
+4 rmetpoi eudstmcahraks fulfotuhantgefgfnbôth brdtw rlitfYukdEEmUsie
+*** testing- generating sequences ***
