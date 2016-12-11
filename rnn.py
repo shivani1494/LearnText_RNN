@@ -36,8 +36,8 @@ class RNN:
 		sf.buildInputData()
 		sf.buildLabelData()
 
-		sf.numEpochs = 3
-		sf.datasetLen = 20000
+		sf.numEpochs = 100
+		sf.datasetLen = 1000
 		#sf.testDataLen = 100
 
 		#why did adagrad work great and not sgd
@@ -207,7 +207,7 @@ class RNN:
 
 		print "*** testing- generating sequences ***"
 		str1 = ""		
-		for a in range(50):
+		for a in range(100 / sf.sequenceLen):
 
 			#asciiChar = str1[-1]
 			asciiChar = chr( random.randint(0,255) )
@@ -223,7 +223,41 @@ class RNN:
 				str1 += asciiChar
 
 		print str1
-		print "*** testing- generating sequences ***"		
+		print "*** testing- generating sequences ***"
+
+	def generate_from(sf, chunk):
+
+		calc_type = 1
+		matches = 0.0
+		chunk_test = chunk[1::]
+		n = sf.sequenceLen
+		split_chunk_data = [ chunk[i:i+n] for i in range(0, len(chunk), n) ]
+		split_chunk_test = [ chunk_test[i:i+n] for i in range(0, len(chunk_test), n) ]
+
+		str_out = ""	
+
+		for c in range( len(split_chunk_data) - 1):
+
+			if c == 0:
+				sf.setHiddenActivation(False)
+			else:
+				sf.setHiddenActivation(True)
+
+			curr_seq_d = split_chunk_data[c]
+			curr_seq_t = split_chunk_test[c]
+			str_out += curr_seq_d[0] #append the first char
+
+			for i in range( len(curr_seq_d) ):
+				sf.calc_y_hidden_layer(curr_seq_d[i], 1, calc_type)
+				p = sf.calc_y_softmax_output_layer(0, 1, calc_type)
+				asciiInt = np.argmax(p)
+				asciiChar = chr(asciiInt)
+				if curr_seq_t[i] == asciiChar:
+					matches += 1.0
+				str_out += asciiChar
+
+		print "Output text: ", str_out
+		return (matches / len(chunk) )*100
 
 	def calc_y_hidden_layer(sf, currData, timestep, calc_type):
 	
@@ -313,11 +347,17 @@ class RNN:
 			sf.training_loss_I = []
 
 			sf.forward_back_prop_single_epoch(j+1)
-			sf.generate()
+			len_chunk = 10
+			if (j + 1) % 20 == 0:
+				print sf.generate_from("".join(sf.allData[:len_chunk]))
 
 			print "------------------- end of epoch: ", j+1, "-------------------"
 
 		sf.createTrainingLossPlot()
+		for temp in [0.1, 0.3, 0.5, 1, 2]:
+			sf.temp = temp
+			print
+			sf.generate()
 
 		#training_acc_epochs.append(training_acc)
 		#print "training_acc_epochs: ", training_acc_epochs    
@@ -521,5 +561,5 @@ class RNN:
 
 if __name__ == '__main__':
 	
-	RNN = RNN()
-	RNN.forward_back_propogation()
+	rnn = RNN()
+	rnn.forward_back_propogation()
